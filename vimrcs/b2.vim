@@ -37,7 +37,7 @@ nmap k gk
 " set numbering of lines
 set number
 
-" VIM pathogen enabling:
+" Flake8 ignores:
 let g:flake8_ignore="E201,E202,E231,E501,E701"
 let g:flake8_max_line_length=99
 
@@ -46,3 +46,6 @@ let g:vim_markdown_folding_disabled=1
 
 " Enable highlightning on postgres SQL files
 au BufNewFile,BufRead *.psql setf psql
+
+" VimErl - disabling error-stuff (syntastic will fix that)
+let erlang_show_errors=0
