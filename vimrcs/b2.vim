@@ -1,3 +1,4 @@
+"
 " Yankring - redefined default keys that conflict with mine
 let g:yankring_replace_n_pkey = '<C-m>'
 let g:yankring_replace_n_nkey = '<C-o>'
@@ -49,3 +50,6 @@ au BufNewFile,BufRead *.psql setf psql
 
 " VimErl - disabling error-stuff (syntastic will fix that)
 let erlang_show_errors=0
+
+" fix syntastic python (only on loonix, fix later)
+let g:syntastic_python_python_exec = '/usr/bin/python3.4'

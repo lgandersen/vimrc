@@ -14,9 +14,9 @@ if has("mac") || has("macunix")
 elseif has("win16") || has("win32")
     set gfn=Hack:h14,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h11
 elseif has("linux")
-    set gfn=Inconsolata\ medium\ 12
+    set gfn=Inconsolata\ medium\ 10
 elseif has("unix")
-    set gfn=Inconsolata\ medium\ 12
+    set gfn=Inconsolata\ medium\ 10
 endif
 
 " Open MacVim in fullscreen mode
