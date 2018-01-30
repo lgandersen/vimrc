@@ -53,3 +53,6 @@ let erlang_show_errors=0
 
 " fix syntastic python (only on loonix, fix later)
 let g:syntastic_python_python_exec = '/usr/bin/python3.4'
+let g:pymode_python = 'python3'
+
+nnoremap ø :
