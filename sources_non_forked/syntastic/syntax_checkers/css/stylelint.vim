@@ -1,6 +1,6 @@
 "============================================================================
 "File:        stylelint.vim
-"Description: Syntax checking plugin for syntastic.vim using `stylelint`
+"Description: Syntax checking plugin for syntastic using `stylelint`
 "             (https://github.com/stylelint/stylelint).
 "Maintainer:  Tim Carry <tim at pixelastic dot com>
 "License:     This program is free software. It comes without any warranty,
@@ -19,8 +19,14 @@ let g:loaded_syntastic_css_stylelint_checker = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
+let s:args_after = {
+    \ 'css':  '-f json',
+    \ 'html': '-f json',
+    \ 'less': '-f json -s less',
+    \ 'scss': '-f json -s scss' }
+
 function! SyntaxCheckers_css_stylelint_GetLocList() dict
-    let makeprg = self.makeprgBuild({ 'args_after': '-f json' })
+    let makeprg = self.makeprgBuild({ 'args_after': get(s:args_after, self.getFiletype(), '') })
 
     let errorformat = '%t:%f:%l:%c:%m'
 

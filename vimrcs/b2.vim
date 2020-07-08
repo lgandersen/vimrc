@@ -1,4 +1,4 @@
-"
+
 " Yankring - redefined default keys that conflict with mine
 let g:yankring_replace_n_pkey = '<C-m>'
 let g:yankring_replace_n_nkey = '<C-o>'
@@ -53,3 +53,10 @@ let erlang_show_errors=0
 
 " Fix Ex Command mode switch
 nnoremap ø :
+
+" Options for BufExplorer
+let g:bufExplorerFindActive=0
+let g:bufExplorerSortBy='mru'
+
+" Options for Elixir formatter
+let g:mix_format_on_save = 1
