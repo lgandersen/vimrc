@@ -1,0 +1,3 @@
+[submodule "sources_non_forked/vim-go"]
+	path = sources_non_forked/vim-go
+	url = https://github.com/fatih/vim-go.git
