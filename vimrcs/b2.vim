@@ -60,3 +60,14 @@ let g:bufExplorerSortBy='mru'
 
 " Options for Elixir formatter
 let g:mix_format_on_save = 1
+
+filetype on            " enables filetype detection
+filetype plugin on     " enables filetype specific plugins
+
+"" NOW WE ARE USING PyFlakes (needs to be installed using e.g. pip)
+"let g:pyflakes_prefer_python_version = 3
+
+" Check Python files with flake8 and pylint.
+let g:ale_linters = {'python': ['flake8', 'pylint']}
+" Fix Python files with autopep8 and yapf.
+let g:ale_fixers = {'python': ['autopep8', 'yapf']}
