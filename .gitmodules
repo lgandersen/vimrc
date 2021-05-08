@@ -4,3 +4,6 @@
 [submodule "sources_non_forked/ale"]
 	path = sources_non_forked/ale
 	url = https://github.com/dense-analysis/ale
+[submodule "sources_non_forked/vimwiki"]
+	path = sources_non_forked/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
